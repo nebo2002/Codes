@@ -1,0 +1,16 @@
+int climbStairs(int n){
+    
+    if (n==1 | n==2)
+    {
+        return n;
+    }
+
+    int  recCall1=climbStairs(n-1);
+    int recCall2=climbStairs(n-2);
+
+    int finalres=recCall1+recCall2;
+
+    return finalres;
+    
+
+}
