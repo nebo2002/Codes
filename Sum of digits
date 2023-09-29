@@ -1,0 +1,11 @@
+#User function Template for python3
+
+class Solution:
+    def sumOfDigits (self, N):
+        # code here
+        add=0
+        while(N!=0):
+            a=N%10
+            add=add+a
+            N=N//10
+        return add
