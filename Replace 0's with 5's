@@ -1,0 +1,7 @@
+#function should return an integer
+#your task is to compplete this function
+class Solution:
+    def convertFive(self,n):
+        #Code here
+        string=str(n)
+        return string.replace('0','5')
