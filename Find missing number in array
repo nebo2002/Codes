@@ -1,0 +1,13 @@
+#User function Template for python3
+
+
+class Solution:
+    def missingNumber(self,array,n):
+        # code here
+        total=n*(n+1)//2
+        
+        summ=0
+        for i in range(len(array)):
+            summ=summ+array[i]
+        miss=total-summ
+        return miss
