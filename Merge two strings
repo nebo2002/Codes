@@ -1,0 +1,21 @@
+#User function Template for python3
+class Solution:
+    def merge(self, S1, S2):
+        # code here
+        i = 0
+        result=""
+        while (i < len(S1)) or (i < len(S2)):
+              
+            # First choose the ith character of the 
+            # first string if it exists 
+            if (i < len(S1)):
+                result += S1[i] 
+      
+            # Then choose the ith character of the 
+            # second string if it exists 
+            if (i < len(S2)):
+                result += S2[i] 
+                  
+            i += 1
+              
+        return result
