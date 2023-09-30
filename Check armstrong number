@@ -1,0 +1,19 @@
+#User function Template for python3
+
+#User function Template for python3
+class Solution:
+    def armstrongNumber (self, n):
+        # code here 
+        temp=n
+        order=len(str(n))
+        res=0
+        
+        while(temp!=0):
+            a=temp%10
+            res=res+pow(a,order)
+            temp//=10
+        
+        if res==n:
+            return "Yes"
+        else:
+            return "No"
