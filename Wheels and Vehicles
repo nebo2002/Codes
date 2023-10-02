@@ -1,0 +1,9 @@
+v=200
+w=540
+if 2<=w and w%2==0 and v<w:
+	
+	x=(w-2*v)//2
+	y=v-x
+else:
+	print( invalid)
+print(x,y)
